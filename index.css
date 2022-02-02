@@ -3,11 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    background: rgb(232, 241, 242);
 }
 .page{
     display: flex;
-    
-    background: linear-gradient(#2f5d62,#18163a );
+    /*background: linear-gradient(#2f5d62,#18163a );*/
 }
 .page_info{
     width: 75vw;
@@ -15,10 +15,10 @@
 .page_info_headerr{
     /*outline: 5px solid blue;*/
     display: flex;
-    color: white;
+    /*color: white;*/
 }
 .page_info_headerr_image{
-    border: solid white;
+    border: solid rgb(19, 41, 61);
     border-radius: 75px;
     height: 150px;
     margin: 10px;
@@ -32,20 +32,34 @@
     justify-content: center;
     align-items: flex-start;
     padding: 5px;
-    color: white;
+    color: black;
 }
 .page_info_headerr_icon{
-    height: 50px;
+    height: 40px;px;
 }
 .page_info_body{
     /*outline: 5px solid white;*/
-    color: white;
+    /*color: white;*/
+}
+.page_info_body > h3{
+    background: rgb(19, 41, 61);
+    color: rgb(232, 241, 242);
+    height: 50px;
+}
+.page_info_body_experi{
+    display: flex;
+    align-items: center;
+}
+.page_info_body_educacion{
+    display: flex;
 }
 .page_skills{
-    color: white;
+    /*color: white;*/
+    background: rgb(195, 203, 204);
     width: 25vw;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     /*outline: 5px solid red;*/
 }
 footer{
