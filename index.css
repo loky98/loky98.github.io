@@ -5,6 +5,9 @@
     box-sizing: 0;
     background: rgb(232, 241, 242);
 }
+header{
+    
+}
 .page{
     display: flex;
     /*background: linear-gradient(#2f5d62,#18163a );*/
@@ -23,19 +26,24 @@
     height: 150px;
     margin: 10px;
 }
+.page_info_header_in{
+    box-sizing: content-box;
+    width: 100%;
+}
 .page_info_headerr_info{
     display: flex;
+    justify-content: space-around;
 }
 .page_info_headerr_datos{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: flex-start;
     padding: 5px;
     color: black;
 }
 .page_info_headerr_icon{
-    height: 40px;px;
+    height: 40px;
+    margin: 5px;
 }
 .page_info_body{
     /*outline: 5px solid white;*/
@@ -55,7 +63,7 @@
 }
 .page_skills{
     /*color: white;*/
-    background: rgb(195, 203, 204);
+    background: rgb(223, 230, 232);
     width: 25vw;
     display: flex;
     justify-content: center;
