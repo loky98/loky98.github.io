@@ -94,7 +94,7 @@ footer{
         flex-direction: column;
     }
     .info{
-        width: 100vw;
+        width: 100%;
     }
     .info_body_experience_item{
         display: flex;
