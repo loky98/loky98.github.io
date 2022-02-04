@@ -85,3 +85,20 @@ footer{
     height: inherit;
 }
 /*552*/
+@media only screen and (max-width:736px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .info{
+        width: 100%;
+    }
+    .info_body_experience_item{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .info_body_experience_item_tittle h3{
+        width: auto;
+    }
+}
