@@ -70,24 +70,39 @@ p{
 .info_body_experience_item_tittle h3{
     width: 200px;
 }
-.info_body_educacion{
+h4{
+    margin: 0;
+}
+h5{
+    margin: 0;
+}
+.info_body_education{
     display: flex;
+    justify-content: space-between;
+}
+.info_body_education_professional{
+    width: 47%;
+}
+.info_body_education_item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.info_body_education_complementary{
+    width: 47%;
 }
 .skills{
-    /*color: white;*/
     background: rgb(223, 230, 232);
     width: 25vw;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /*outline: 5px solid red;*/
 }
 footer{
-    /*outline:5px solid brown;*/
     margin-top: auto;
     height: inherit;
 }
-/*552*/
 @media only screen and (max-width:736px){
     body{
         display: flex;
@@ -115,5 +130,16 @@ footer{
 @media only screen and (max-width:548px){
     .info_headerr_datos p{
         display: none;
+    }
+    .info_body_education{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .info_body_education_professional{
+        width: 100%;
+    }
+    .info_body_education_complementary{
+        width: 100%;
     }
 }
