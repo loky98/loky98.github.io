@@ -92,13 +92,51 @@ h5{
 .info_body_education_complementary{
     width: 47%;
 }
+                        progress[value] {
+                            /* Elimino la apariencia por defecto */
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            
+                            /* Quito el borde que aparece en Firefox */
+                            border: none;
+                        
+                            /* Añado mis propios estilos */
+                            width: 180px;
+                            height: 30px;
+                            overflow:hidden;
+                            
+                        /*  Estos estilos solo se aplicaran al fondo de la barra en mozilla */
+                            border:1px inset #666;
+                            background-color:#D8D8D8;
+                            border-radius : 20px ;
+                        }
+                        progress::-moz-progress-bar{
+                            background: rgb(19, 41, 61);
+                            border-radius : 20px;
+                        }
+                        progress::-webkit-progress-value {
+                            background: rgb(19, 41, 61);
+                            border-radius : 20px;  
+                        }
+                        
+                        progress::-webkit-progress-bar {
+                            background-color:#D8D8D8;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; /*esta sombra es para simular el borde que he aplicado arriba para Mozilla*/
+                            border-radius : 20px ;         
+                        }
 .skills{
     background: rgb(223, 230, 232);
     width: 25vw;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
+.skills_skills_item{
+    display: flex;
+    flex-direction: column;
+}
+
 footer{
     margin-top: auto;
     height: inherit;
@@ -120,11 +158,7 @@ footer{
         width: auto;
     }
     .skills{
-        background: rgb(223, 230, 232);
         width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
     }
 }
 @media only screen and (max-width:548px){
