@@ -102,8 +102,8 @@ h5{
                             border: none;
                         
                             /* Añado mis propios estilos */
-                            width: 180px;
-                            height: 30px;
+                            width: 90%;
+                            height: 20px;
                             overflow:hidden;
                             
                         /*  Estos estilos solo se aplicaran al fondo de la barra en mozilla */
@@ -132,14 +132,62 @@ h5{
     flex-direction: column;
     align-items: center;
 }
+.skills h2{
+    background: rgb(223, 230, 232);
+}
+.skills_skills{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(223, 230, 232);
+}
+.skills_skills :nth-child(2n+1){
+    background: #ae8264;
+    color: rgb(243, 251, 253);
+}
+.skills_skills :nth-child(2n){
+    background: #355664;
+}
+.skills_skills :nth-child(2n) h3{
+    background: #355664;
+}
+.skills_skills :nth-child(2n) a{
+    background: #355664;
+}
 .skills_skills_item{
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+    width: 90%;
     display: flex;
     flex-direction: column;
 }
-
+.skills_skills_item_link{
+    text-align: right;
+}
+.skills_hobbies{
+    background: rgb(223, 230, 232);
+}
+.skills_hobbies img{
+    height: 60px;
+    background: rgb(223, 230, 232);
+}
+.skills_instagram a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(223, 230, 232);
+}
 footer{
     margin-top: auto;
     height: inherit;
+}
+@media only screen and (max-width:1185px){
+.skills_hobbies{
+    display: flex;
+    flex-direction: column;
+}
 }
 @media only screen and (max-width:736px){
     body{
