@@ -3,45 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monitoreo PLC</title>
+  <title>Botón Redireccionador</title>
 </head>
 <body>
-  <h1>Monitoreo PLC</h1>
-  <button id="onButton">ON</button>
-  <button id="offButton">OFF</button>
 
-  <script>
-    // Función para enviar una solicitud al servidor
-    function enviarSolicitud(estado) {
-      // Crear una nueva instancia de XMLHttpRequest
-      var xhttp = new XMLHttpRequest();
+<button onclick="window.location.href = 'https://f5ab-191-95-60-99.ngrok-free.app/on';">Ir a la URL</button>
 
-      // Definir la función que manejará la respuesta de la solicitud
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-          // Aquí puedes manejar la respuesta del servidor si es necesario
-          console.log("La solicitud fue exitosa");
-        }
-      };
+<button onclick="window.location.href = 'https://f5ab-191-95-60-99.ngrok-free.app/off';">Ir a la URL</button>
 
-      // Abrir una nueva solicitud HTTP POST a la URL deseada (en este caso, http://192.168.23.2/off)
-      xhttp.open("GET", "https://f5ab-191-95-60-99.ngrok-free.app/" + estado.toLowerCase(), true);
-
-      // Establecer las cabeceras necesarias, si las hay
-      // xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-      // Enviar la solicitud (en este caso, no necesitas enviar datos adicionales)
-      xhttp.send();
-    }
-
-    // Event listeners para los botones
-    document.getElementById("onButton").addEventListener("click", function() {
-      enviarSolicitud("on");
-    });
-
-    document.getElementById("offButton").addEventListener("click", function() {
-      enviarSolicitud("off");
-    });
-  </script>
 </body>
 </html>
